@@ -1,0 +1,89 @@
+
+font - Cedarville Cursive
+fw-400
+
+
+font - Josefin Sans
+fw-700 bold
+
+font - Alegreya Sans
+fw-400 regular
+
+
+font - George Round
+fw-400
+
+font-Cedarville Cursive';
+fw-400
+
+h1 - font family - Josefin Sans
+fw-700
+fz-54px
+lh-54px
+
+
+ text - ff-Cedarville Cursive';
+ fw-400
+ fz-19px
+ lh-36px
+
+
+ button order-
+ ff- Josefin Sans
+ fw-700
+ fz-16px
+ lh-16px
+
+ h2 -ff josefin Sans
+ fw-700
+ fz-38
+ lh-38
+
+ text section/card -
+ font - Alegreya Sans
+ fw-400
+ fz-19px
+ lh-36
+
+ h3-card
+ ff- Josefin Sans
+ fw-700
+ fz-28px
+ lh-28px
+
+ button card
+ ff- George Round
+ fw-400
+fz-20px
+lh-25px
+
+
+h2 - footer
+ff- josefin Sans
+fw-700
+fz-32px
+lh-45px
+
+text adres footer-
+ff- Alegreya Sans
+fw-400
+fs-18px
+lh-45px
+
+a-fotter
+ff- josefin Sans
+fw-700
+fs-16px
+lh-16px
+
+text footer -
+ff - josefin
+fw-400
+fs-14px
+lh-36px
+
+
+@mixin font-h1{
+  $font-size-h1:54px;
+  $font-line-height:54px:
+}

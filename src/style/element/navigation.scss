@@ -1,0 +1,15 @@
+.navigation {
+  display: none;
+
+  @include media-lg-desktop-and-up {
+    display: block;
+  }
+
+  &__list {
+    @include media-lg-desktop-and-up {
+      display: flex;
+      align-items: center;
+      gap: 75px;
+    }
+  }
+}

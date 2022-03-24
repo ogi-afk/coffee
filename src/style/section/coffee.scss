@@ -1,0 +1,234 @@
+.coffee {
+  margin-top: 150px;
+
+  @include media-lg-desktop-and-up {
+    margin-top: 158px;
+  }
+
+  &__wrapper {
+    @include media-lg-desktop-and-up {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__citation {
+    font-family: Cedarville Cursive;
+    font-size: 19px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 120px;
+  }
+
+  &__title {
+    font-family: Josefin Sans;
+    font-size: 54px;
+    line-height: 54px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    margin: 0 auto;
+
+    @include media-lg-desktop-and-up {
+      margin: 0 0;
+      margin-bottom: 332px;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    @include media-lg-desktop-and-up {
+      display: flex;
+      background-color: rgba(227, 235, 231, 1);
+      padding-top: 140px;
+      padding-left: 39px;
+      padding-right: 27px;
+      margin-bottom: 160px;
+      margin-right: 60px;
+      position: relative;
+    }
+  }
+  &__content::after {
+    content: "";
+    width: 159px;
+    height: 159px;
+    background-color: rgba(227, 235, 231, 1);
+    position: absolute;
+    bottom: 0px;
+    left: -159px;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__svg-first {
+    @include media-lg-desktop-and-up {
+      margin-bottom: -47px;
+    }
+  }
+
+  &__social {
+    display: none;
+
+    @include media-lg-desktop-and-up {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 80px;
+      top: 270px;
+    }
+  }
+
+  &__soc-title {
+    @include media-lg-desktop-and-up {
+      transform: rotate(-90deg);
+      top: 100%;
+      margin-top: 40px;
+      width: max-content;
+    }
+  }
+
+  &__soc-list {
+    @include media-lg-desktop-and-up {
+      order: -1;
+    }
+  }
+  &__list {
+    margin-top: 177px;
+
+    @include media-lg-desktop-and-up {
+      margin-top: 150px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+
+    @include media-lg-desktop-and-up {
+      flex-direction: row;
+      margin-bottom: 90px;
+    }
+  }
+
+  &__img {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    background: rgba(250, 233, 224, 1);
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @include media-lg-desktop-and-up {
+      max-height: 287px;
+      margin-right: 100px;
+    }
+  }
+  &__svg {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    position: relative;
+
+    @include media-lg-desktop-and-up {
+      margin-top: 78px;
+      margin-left: 28px;
+      margin-right: -13px;
+    }
+  }
+
+  &__cit {
+    display: none;
+
+    @include media-lg-desktop-and-up {
+      display: inline;
+      transform: rotate(-90deg);
+      width: max-content;
+      font-family: "Cedarville Cursive";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 53px;
+      position: absolute;
+      left: 55px;
+    }
+  }
+
+  &__img-2 {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    background: rgba(227, 235, 231, 1);
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @include media-lg-desktop-and-up {
+      order: 1;
+      margin-left: 123px;
+      max-width: 410px;
+      max-height: 276px;
+    }
+  }
+  &__svg-2 {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    position: relative;
+
+    @include media-lg-desktop-and-up {
+      margin-left: 72px;
+      margin-right: 102px;
+      margin-top: -35px;
+    }
+  }
+  &__cit-2 {
+    display: none;
+
+    @include media-lg-desktop-and-up {
+      display: inline;
+      transform: rotate(-90deg);
+      width: max-content;
+      font-family: "Cedarville Cursive";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 53px;
+      position: absolute;
+      right: 90px;
+    }
+  }
+
+  &__sub-title {
+    font-family: Josefin Sans;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+    margin: 20px 0;
+
+    @include media-lg-desktop-and-up {
+      margin-top: 0;
+    }
+  }
+
+  &__text {
+    font-family: Alegreya Sans;
+    font-size: 19px;
+    line-height: 36px;
+    font-weight: 400;
+
+    @include media-lg-desktop-and-up {
+      max-width: 645px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__order {
+  }
+}

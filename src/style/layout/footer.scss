@@ -1,0 +1,102 @@
+.footer {
+  margin-top: 96px;
+  text-align: center;
+  position: relative;
+
+  @include media-lg-desktop-and-up {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+  }
+
+  &__img {
+    margin-right: 178px;
+  }
+
+  @include media-lg-desktop-and-up {
+    &__img::after {
+      content: "";
+      display: block;
+      width: 102px;
+      height: 2px;
+      background-color: black;
+      position: absolute;
+      top: 35px;
+      left: 800px;
+    }
+  }
+
+  &__cit {
+    display: none;
+
+    @include media-lg-desktop-and-up {
+      display: inline;
+      transform: rotate(-90deg);
+      width: max-content;
+      font-family: "Cedarville Cursive";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 53px;
+      position: absolute;
+      left: 708px;
+    }
+  }
+
+  &__title {
+    font-family: "Josefin Sans";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  &__list {
+    :nth-child(3) {
+      display: none;
+    }
+    :nth-child(4) {
+      display: none;
+    }
+
+    @include media-lg-desktop-and-up {
+      :nth-child(3),
+      :nth-child(4) {
+        display: block;
+      }
+    }
+  }
+
+  &__address {
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 45px;
+  }
+
+  &__button {
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    @include media-lg-desktop-and-up {
+      display: none;
+    }
+  }
+
+  &__svg {
+    width: 49.5px;
+  }
+
+  &__banner {
+    margin-bottom: 30px;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 36px;
+
+    @include media-lg-desktop-and-up {
+      margin: 0 auto;
+      margin-top: 114px;
+      margin-bottom: 50px;
+    }
+  }
+}
