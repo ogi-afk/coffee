@@ -12,6 +12,9 @@
 
   &__button {
     margin-top: 5px;
+    @include media-lg-desktop-and-up {
+      display: none;
+    }
   }
 
   &__logo {
@@ -21,6 +24,14 @@
 
     @include media-lg-desktop-and-up {
       margin: 0;
+    }
+  }
+
+  &__navigation {
+    display: none;
+
+    @include media-lg-desktop-and-up {
+      display: block;
     }
   }
 }

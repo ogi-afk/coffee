@@ -1,89 +1,81 @@
+@mixin fonts-title-h1 {
+  font-family: Josefin Sans;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 54px;
+  line-height: 54px;
 
-font - Cedarville Cursive
-fw-400
+  @include media-lg-desktop-and-up {
+    font-size: 63px;
+    line-height: 63px;
+  }
+}
 
+@mixin citation {
+  font-family: "Cedarville Cursive";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 36px;
 
-font - Josefin Sans
-fw-700 bold
+  @include media-lg-desktop-and-up {
+    font-size: 28px;
+    line-height: 53px;
+  }
+}
 
-font - Alegreya Sans
-fw-400 regular
+@mixin button-main {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
 
+  @include media-tablet-and-up {
+    font-family: "George Round";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
 
-font - George Round
-fw-400
+@mixin nav {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
 
-font-Cedarville Cursive';
-fw-400
+@mixin text {
+  font-family: "Alegreya Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 36px;
+}
 
-h1 - font family - Josefin Sans
-fw-700
-fz-54px
-lh-54px
+@mixin sub-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 38px;
+}
 
+@mixin card-title {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+}
 
- text - ff-Cedarville Cursive';
- fw-400
- fz-19px
- lh-36px
-
-
- button order-
- ff- Josefin Sans
- fw-700
- fz-16px
- lh-16px
-
- h2 -ff josefin Sans
- fw-700
- fz-38
- lh-38
-
- text section/card -
- font - Alegreya Sans
- fw-400
- fz-19px
- lh-36
-
- h3-card
- ff- Josefin Sans
- fw-700
- fz-28px
- lh-28px
-
- button card
- ff- George Round
- fw-400
-fz-20px
-lh-25px
-
-
-h2 - footer
-ff- josefin Sans
-fw-700
-fz-32px
-lh-45px
-
-text adres footer-
-ff- Alegreya Sans
-fw-400
-fs-18px
-lh-45px
-
-a-fotter
-ff- josefin Sans
-fw-700
-fs-16px
-lh-16px
-
-text footer -
-ff - josefin
-fw-400
-fs-14px
-lh-36px
-
-
-@mixin font-h1{
-  $font-size-h1:54px;
-  $font-line-height:54px:
+@mixin card-text {
+  font-family: "Alegreya Sans";
+  font-size: 19px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 36px;
 }

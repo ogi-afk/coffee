@@ -28,19 +28,12 @@
   }
 
   &__sub-title {
-    font-family: "Josefin Sans";
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: 700;
+    @include card-title;
     margin-bottom: 30px;
   }
 
   &__text {
-    font-family: "Alegreya Sans";
-    font-size: 19px;
-    line-height: 36px;
-    font-weight: 400;
-    margin-bottom: 36px;
+    @include card-text;
   }
   &__button {
     margin: 0 auto;

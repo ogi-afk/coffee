@@ -1,15 +1,15 @@
 .navigation {
-  display: none;
-
-  @include media-lg-desktop-and-up {
-    display: block;
-  }
+  @include nav;
 
   &__list {
+    align-items: center;
+    gap: 75px;
     @include media-lg-desktop-and-up {
       display: flex;
-      align-items: center;
-      gap: 75px;
     }
+  }
+
+  &__button {
+    padding: 14px 24px 13px 26px;
   }
 }

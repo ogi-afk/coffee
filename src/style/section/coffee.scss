@@ -13,20 +13,14 @@
   }
 
   &__citation {
-    font-family: Cedarville Cursive;
-    font-size: 19px;
-    line-height: 36px;
-    font-weight: 400;
+    @include citation;
     text-align: center;
     margin-bottom: 12px;
     margin-top: 120px;
   }
 
   &__title {
-    font-family: Josefin Sans;
-    font-size: 54px;
-    line-height: 54px;
-    font-weight: 700;
+    @include fonts-title-h1;
     text-align: center;
     margin-bottom: 30px;
   }
@@ -37,6 +31,13 @@
     @include media-lg-desktop-and-up {
       margin: 0 0;
       margin-bottom: 332px;
+      padding: 18px 69px 18px 69px;
+    }
+  }
+
+  &__button-svg {
+    @include media-lg-desktop-and-up {
+      display: none;
     }
   }
 
@@ -45,7 +46,7 @@
 
     @include media-lg-desktop-and-up {
       display: flex;
-      background-color: rgba(227, 235, 231, 1);
+      background-color: $light-gray;
       padding-top: 140px;
       padding-left: 39px;
       padding-right: 27px;
@@ -58,13 +59,14 @@
     content: "";
     width: 159px;
     height: 159px;
-    background-color: rgba(227, 235, 231, 1);
+    background-color: $light-gray;
     position: absolute;
     bottom: 0px;
     left: -159px;
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.4;
   }
 
   &__svg-first {
@@ -124,7 +126,7 @@
     order: -1;
     display: flex;
     justify-content: center;
-    background: rgba(250, 233, 224, 1);
+    background: $yellow-pink;
     margin-left: -20px;
     margin-right: -20px;
 
@@ -166,7 +168,7 @@
     order: -1;
     display: flex;
     justify-content: center;
-    background: rgba(227, 235, 231, 1);
+    background: $light-gray;
     margin-left: -20px;
     margin-right: -20px;
 
@@ -206,10 +208,7 @@
   }
 
   &__sub-title {
-    font-family: Josefin Sans;
-    font-size: 38px;
-    line-height: 38px;
-    font-weight: 700;
+    @include sub-title;
     margin: 20px 0;
 
     @include media-lg-desktop-and-up {
@@ -218,17 +217,11 @@
   }
 
   &__text {
-    font-family: Alegreya Sans;
-    font-size: 19px;
-    line-height: 36px;
-    font-weight: 400;
+    @include text;
 
     @include media-lg-desktop-and-up {
       max-width: 645px;
       margin-bottom: 24px;
     }
-  }
-
-  &__order {
   }
 }
